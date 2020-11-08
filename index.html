@@ -31,12 +31,11 @@
   <a-scene vr-mode-ui="enabled: false;" renderer="antialias: true; alpha: true; precision: mediump;" embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
     <a-assets>
-      <video src="clock.mp4" preload="auto" id="vid" response-type="arraybuffer" loop webkit-playsinline autoplay muted playsinline>
-      </video>
+      <video src="clock.mp4" preload="auto" id="vid" response-type="arraybuffer" loop webkit-playsinline autoplay muted playsinline></video>
     </a-assets>
 
     <a-nft videohandler type="nft" url="https://arjs-cors-proxy.herokuapp.com/https://nenjiru.github.io/ar/marker/manga" smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
-      <a-video src="#vid" position="200 0 -100" rotation="90 180 180" width="300" height="175"></a-video>
+      <a-video src="#vid" position="100 0 -200" rotation="-90 0 0" width="320" height="180"></a-video>
     </a-nft>
 
     <a-entity camera></a-entity>
