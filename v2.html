@@ -49,7 +49,7 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <div class="arjs-loader">
-    <div>Loading, please wait...2</div>
+    <div>Loading, please wait...3</div>
   </div>
   <a-scene vr-mode-ui="enabled: false;" renderer='antialias: true; alpha: true; precision: mediump;' embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
@@ -59,7 +59,8 @@
     </a-assets>
 
     <a-nft videohandler type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://nenjiru.github.io/ar/marker/manga' smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5">
-      <a-video src="#vid" position='50 150 -100' width='300' height='175'>
+      <!-- <a-video play-on-window-click src="#vid" width="1.6" height="0.9" rotation="90 180 0" position="0 2 0" material="" geometry=""></a-video> -->
+      <a-video src="#vid" position='50 150 -100' rotation='90 180 0' width='300' height='175'>
       </a-video>
     </a-nft>
     <a-entity camera></a-entity>
